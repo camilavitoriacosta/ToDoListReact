@@ -1,0 +1,65 @@
+.listaTarefas {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #363b65;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #151627;
+}
+
+.item span {
+  width: 100%;
+  color: #f5f5f5;
+  margin-right: 10px;
+  padding: 10px 15px;
+}
+
+.item.completo {
+  border: none;
+  background-color: #1e1f2e;
+  opacity: 0.5;
+}
+
+.item.completo span {
+  color: #4d506e;
+  text-decoration: line-through;
+}
+
+.botao.deletar {
+  background-color: transparent;
+  color: #4d506e;
+}
+
+.botao.deletar:hover {
+  background-color: #ff004c;
+  color: #f5f5f5;
+}
+
+.botao.deletarTodas {
+  border: 1px solid #ff004c;
+  color: #ff004c;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.botao.deletarTodas:hover {
+  background-color: #ff004c;
+  color: #f5f5f5;
+}
+
+.icone {
+  margin: 0 auto 40px auto;
+  width: 40%;
+}
