@@ -4,13 +4,15 @@ import "./Lista.css";
 
 export default function Lista({ lista, alterarLista }) {
   function selecionar(index) {
-    lista[index].estaCompleto = !lista[index].estaCompleto;
-    alterarLista(lista);
+    const listaCopia = [...lista];
+    listaCopia[index].estaCompleto = !listaCopia[index].estaCompleto;
+    alterarLista(listaCopia);
   }
 
   function deletar(index) {
-    lista.splice(index);
-    alterarLista(lista);
+    const listaCopia = [...lista];
+    listaCopia.splice(index);
+    alterarLista(listaCopia);
   }
 
   function deletarTodas() {
